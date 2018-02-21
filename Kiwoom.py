@@ -35,7 +35,7 @@ class Kiwoom(QAxWidget):
 
         self.login_event_loop.exit()
 
-    def get_code_list_by_marget(self, market):
+    def get_code_list_by_market(self, market):
         code_list = self.dynamicCall("GetCodeListByMarket(QString)", market)
         code_list = code_list.split(';')
         return code_list[:-1]

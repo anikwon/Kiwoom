@@ -13,7 +13,7 @@ class PyMon:
 
     def get_code_list(self):
         self.kospi_codes = self.kiwoom.get_code_list_by_market(MARKET_KOSPI)
-        self.kodaq_codes = self.kiwoom.get_code_list_by_market(MARKET_KOSDAQ)
+        self.kosdaq_codes = self.kiwoom.get_code_list_by_market(MARKET_KOSDAQ)
 
     def run(self):
         print(self.kospi_codes[0:4])
